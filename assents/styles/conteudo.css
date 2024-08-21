@@ -48,7 +48,7 @@ body {
     row-gap: 1rem;
 }
 
-button {
+.btn {
     width: 12rem;
     height: 2.5rem;
     background: transparent;
@@ -87,4 +87,99 @@ button:hover {
     background-color: #333A53;
     width: 48rem;
     border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
 }
+
+/* cards */
+
+.card {
+    width: 10rem;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:nth-child(4), .card:nth-child(5) {
+    width: calc((27.5rem - 60px) / 2); /* Calcula a largura das duas últimas cards para caberem duas por linha */
+}
+
+.card-front,
+.card-back {
+    width: 10rem;
+    height: 11rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0b11426e;
+    transition: transform 0.6s;
+}
+
+.card-front {
+    background-color: #D9C470;
+    padding: 10px;
+}
+
+.card-front img {
+    width: 9rem;
+    margin-bottom: 3px;
+}
+
+.card-front p {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #333A53;
+    margin-left: 2rem;
+}
+
+.card-back {
+    background-color: #3498db;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+.card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+.start {
+    display: flex;
+    align-items: center;
+    width: 4.5rem;
+    height: 1.70rem;
+    font-size: 15px;
+    background-color: #ffffff;
+    color: #3498db;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.start:hover {
+    background-color: #2980b9;
+    color: #ffffff;
+}
+
+.btn-start {
+    text-decoration: none;
+
+}
+
