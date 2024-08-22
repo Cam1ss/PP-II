@@ -28,10 +28,9 @@ body {
 }
 
 .perfil img{
-    position: absolute;
     width: 7rem;
-    top: 0rem;
-    transform: translateY(100px) translateX(-50%);
+    display: block;
+    margin-bottom: 1rem;
 }
 
 .menu {
@@ -39,8 +38,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 15rem;
-    height: 28rem;
+    width: 16rem;
+    height: 29rem;
     border-radius: 10px;
     cursor: pointer;
     background-color: #D9C470;
@@ -80,6 +79,9 @@ button:hover {
     text-transform: capitalize;
 }
 
+.button-github button {
+    margin-bottom: 5rem;
+}
 
 
 /* Conteudo */
@@ -109,8 +111,8 @@ button:hover {
 
 .card-front,
 .card-back {
-    width: 10rem;
-    height: 11rem;
+    width: 11rem;
+    height: 12rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -130,7 +132,7 @@ button:hover {
 }
 
 .card-front img {
-    width: 9rem;
+    width: 9.5rem;
     margin-bottom: 3px;
 }
 
@@ -143,9 +145,16 @@ button:hover {
 }
 
 .card-back {
-    background-color: #3498db;
+    background-color:  #D9C470;
     color: white;
+    padding: 0 1.5rem;
     transform: rotateY(180deg);
+    
+}
+
+.card-back p {
+    color: #2D2D2D;
+    margin-bottom: 2rem;
 }
 
 
@@ -163,8 +172,8 @@ button:hover {
     width: 4.5rem;
     height: 1.70rem;
     font-size: 15px;
-    background-color: #ffffff;
-    color: #3498db;
+    background-color: #333A53;
+    color: #D9C470;
     border: none;
     padding: 10px;
     border-radius: 5px;
