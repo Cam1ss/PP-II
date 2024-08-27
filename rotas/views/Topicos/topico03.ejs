@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tópico 03</title>
+    <link rel="stylesheet" href="/stylesheets/topicos.css">
+</head>
+
+<body>
+
+    <script src="index.js"> </script>
+
+    <div class="containerM">
+        <div class="container2">
+           <div class="titulo">
+              <img src="/images/cobra.png" alt="cobrinha">
+              <h1> Tópico 03 - Operações </h1>
+           </div>     
+           <br>
+           <div class="container">
+                <div class="paragrafos">
+                    <p> Você já deve ter escutado ou lido alguma vez que pra ser programador, você precisa ser um expert na Matemática. Isso não é verdade! O que você realmente vai precisar é a lógica dessa área para solucionar problemas, mas claro, é necessário o básico. Mas não se preocupe, pois no tópico de hoje você descobrirá como utilizar operadores matemáticos no Python. </p>
+
+                    <p> Primeiramente, vamos começar com os mais simples. Para adição e subtração, os símbolos utilizados na linguagem são os mesmos utlizados em nosso cotidiano</p>
+
+                    <div class="code">
+                        <pre>soma = 2 + 8 </pre>
+                        <pre>print(soma) </pre> 
+                        <pre class="comentario">#10</pre>
+                    </div>
+
+                    <div class="code">
+                        <pre>sub = 10 - 8 </pre>
+                        <pre>print(sub) </pre> 
+                        <pre class="comentario">#2</pre>
+                    </div>
+                    <br>
+                    <p> E quanto à multiplicação e divisão? Relaxa, que é simples também! A única coisa que é diferente são os símbolos. Para multiplicar dois números, utiliza-se um asterisco (*)   </p> 
+           
+                    <div class="code">
+                        <pre>multi = 6 * 7 </pre>
+                        <pre>print(multi) </pre> 
+                        <pre class="comentario">#42</pre>
+                    </div>
+
+                    <p> Para dividir, é só usar "/": </p>
+
+                    <div class="code">
+                        <pre>div = 8/2 </pre>
+                        <pre>print(div) </pre> 
+                        <pre class="comentario">#4</pre>
+                    </div>
+
+                    <p> Se você está ou passou pelo fundamental II, deve saber que existem também a potenciação e a radiciação. Pro primeiro é só você digitar a base, em seguida "**" e depois o expoente.
+ </p>
+
+                    <div class="code">
+                        <pre>pot = 7**2 </pre>
+                        <pre>print(pot) </pre> 
+                        <pre class="comentario">#49</pre>
+                    </div>
+
+                    <p> Então a radiciação é "//" né? Ehh, não! Na verdade esse símbolo é pra quando eu quero pegar a parte inteira de uma divisão. Por exemplo, dividindo 5 por 2 sem considerar parte decimal dá como parte inteira 2 e resto 1. Se quiser saber quanto seria o resto de uma divisão, só utilizar "%" entre dois números. </p>
+
+                    <div class="code">
+                        <pre>divInt = 7//2 </pre>
+                        <pre>resto = 7%2 </pre> 
+                        <pre>print(divInt, resto)</pre>
+                        <pre class="comentario">#3 1</pre>
+                    </div>
+
+                    <p> Tá, mas e a radiciação que tô enrolando até agora? Bem, essa é uma pecuraliade já que envolve um tópico que você verá mais a frente, mas existe uma propriedade matemática pra contornar isso, em que: √x = x^(1/2). Logo:</p>
+
+                    <div class="code">
+                        <pre>raiz = 4**(1/2) </pre>
+                        <pre>print(raiz) </pre> 
+                        <pre class="comentario">#2</pre>
+                    </div>
+
+
+                <p> OBS: É importante saber que, igualmente às expressões matemáticas no mundo real, o Python tem ordem de precedência para seus operadores, dando prioridade aos parênteses </p>    
+
+                </div>
+
+                <div class="linha">
+                    <p> </p>
+                </div>
+
+               <style>
+                 .linha{
+                     height: 1450px;
+                 }
+               </style>
+
+               <%- include('codigopy.ejs') %>
+

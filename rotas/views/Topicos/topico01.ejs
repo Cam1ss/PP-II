@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tópico 01</title>
-    <link rel="stylesheet" href="/stylesheets/topico01.css">
+    <link rel="stylesheet" href="/stylesheets/topicos.css">
 </head>
 
 <body>
@@ -62,57 +62,13 @@
                 </div>
 
                 <div class="linha">
-                    <p> </p>
+                    <p>  </p>
                 </div>
 
-               <div class="console">
-                   <h2> Digite seu Código Python </h2>
-                   <textarea
-                       id="code"
-                       rows="20"
-                       cols="35"
-                       placeholder="Digite seu código Python aqui..."
-                       spellcheck="false"
-                   ></textarea
-                   ><br />
-                   <h2> Entradas para Código </h2>
-                   <textarea
-                       id="input"
-                       rows="5"
-                       cols="35"
-                       placeholder="Digite a entrada aqui..."
-                   >
-                   </textarea
-                   ><br />
-                   <button onclick="runCode()">Executar</button>
-                   <h2> Saída </h2>
-                   <div class="codes">
-                     <p id="output"></p>
-                   </div>
-               </div>
-            </div>
-        </div>
-    </div>
+               <style>
+                    .linha{
+                        height: 880px;
+                    }
+                  </style>
 
-        <script>
-            async function runCode() {
-                const code = document.getElementById("code").value;
-                const input = document.getElementById("input").value;
-                const response = await fetch("/run", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify({ code, input }),
-                });
-
-                const result = await response.text();
-                document.getElementById("output").textContent = result;
-            }
-        </script>
-
-
-        
-</body>
-
-</html>
+                <%- include('codigopy.ejs') %>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tópico 02</title>
+    <link rel="stylesheet" href="/stylesheets/topicos.css">
+</head>
+
+<body>
+
+    <script src="index.js"> </script>
+
+    <div class="containerM">
+        <div class="container2">
+           <div class="titulo">
+              <img src="/images/cobra.png" alt="cobrinha">
+              <h1> Tópico 02 - Declaração e Tipos de Variáveis </h1>
+           </div>     
+           <br>
+           <div class="container">
+                <div class="paragrafos">
+                    <p> Quando queremos salvar um arquivo no computador geralmente nomeamos ela e assim salvamos, além disso, dependendo do tipo de arquivo escolhemos uma pasta para ela ficar. Da mesma forma quando queremos armazenar um dado, declaramos uma variável e atribuímos um nome e um valor para ela. </p>
+
+                    <div class="code">
+                        <pre>mensagem = 'Olá, Mundo' </pre>
+                        <pre>print(mensagem) </pre> 
+                    </div>
+
+                    <p> Como vimos no exemplo acima, criamos uma variável chamada mensagem que é atribuída a um valor do string “Olá, mundo”. Com isso entramos na parte dos tipos de variáveis:   </p> 
+                    <br>
+                    <h2 class="titletext"> Explicação para Tipos </h2>
+
+                    <h3> 1. String (str) </h3>
+                    
+                    <p> 
+                    O tipo “str” é utilizado para armazenar  palavras, frases e textos. As strings devem ser declaradas entre aspas simples (' ') ou duplas (" "). 
+
+ </p>
+
+                    <div class="code">
+                        <pre>nome = "Maria" </pre>
+                        <pre>frase = 'É uma aluna dedicada' </pre> 
+                        <pre>print (type(nome))</pre>  
+                        <pre>print (type(frase))</pre>
+                    </div>
+ </p>
+                
+                    <p> OBS: para conectcar strings podemos usar o operador de concatenação (+) </p>
+
+                    <div class="code">
+                        <pre>nome = "Maria" </pre>
+                        <pre>frase = nome + " é uma aluna dedicada" </pre>
+                        <pre>print (frase) </pre>
+                    </div>
+
+                    <h3> 2. Inteiro (int) </h3>
+
+                        <p> O tipo “int” é utilizado para armazenar números inteiros como 10, -2, 0, 789.
+ </p>
+
+                        <div class="code">
+                                <pre>idade = 13  </pre>
+                                <pre>print(idade) </pre> 
+                        </div>
+                    
+                    <h3> 3. Ponto Flutuante (float) </h3>
+
+                         <p> O tipo “float” é utilizado para armazenar números decimais como 4.5, -0.5, 7.88. Lembre-se de usar o ponto ( . ) para separar a parte inteira da parte decimal, pois se você utilizar vírgula ( , ) o programa irá dar erro. </p>
+
+                        <div class="code">
+                                <pre>altura = 1.70 </pre>
+                                <pre>print(type(altura)) </pre> 
+                        </div>
+
+                    <h3> 4. Booleano (bool) </h3>
+                    
+                    <p> O tipo “bool” é utilizado para armazenar valores lógicos como True (verdadeiro) e False (falso). </p>
+
+                    <div class="code">
+                            <pre>n1 = 4  </pre>
+                            <pre>n2 = 7 </pre> 
+                            <pre>n3 = n1 > n2 </pre>
+                            <pre>n4 = n1 < n2 </pre>
+                            <pre>print("Resultado do n3: ", n3) </pre>
+                            <pre>print("Resultado do n4: ", n4) </pre>
+                    </div>
+
+                <h2 class="titletext"> Entrada para Variáveis </h2>
+
+                <p> O "input()" é função é usada para adquirir dados de entrada passados pelo usuário, que dependendo da informação coletada terá que declarar o tipo dela. </p>
+  
+                <div class="code">
+                    <pre>nome = input() </pre>
+                    <pre>idade = int(input())</pre>
+                    <pre>print("A aluna", nome, "tem", idade, "anos de idade")</pre>
+                </div>
+
+                <p> OBS: para colocar as entradas do código que você quer testar, digite cada valor na área de texto entitulada Entradas para Código. Esse funcionamento não é igual ao do Python, foi apenas um jeito de facilitar o desenvolvimento da aplicação. </p>    
+                    
+                </div>
+
+                <div class="linha">
+                    <p> </p>
+                </div>
+               
+               <style>
+                 .linha{
+                     height: 1490px;
+                 }
+               </style>
+
+               <%- include('codigopy.ejs') %>
+
+               
+              
