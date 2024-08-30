@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tópico 05</title>
+    <link rel="stylesheet" href="/stylesheets/topicos.css">
+</head>
+
+<body>
+
+    <script src="index.js"> </script>
+
+    <div class="containerM">
+        <div class="container2">
+           <div class="titulo">
+              <img src="/images/cobra.png" alt="cobrinha">
+              <h1> Tópico 05 - Estruturas de Seleção </h1>
+           </div>     
+           <br>
+           <div class="container">
+                <div class="paragrafos">
+                    <p> No tópico anterior, abordamos um pouco acerca das estruturas de repetição, já nesse trataremos de falar sobre as estruturas de seleção. As estruturas de seleção são recursos das linguagens de programação que executam um bloco de código, que pode ter saídas diferentes dependendo se a condição dada for satisfeita ou não. </p>
+                    <p> O Python possui as seguintes estruturas de seleção: if, elif e else. </p>
+
+                    <h2 class="titletext"> If </h2>
+
+                    <p> O "if" é basicamente o "se". Por exemplo: Se eu tirar média abaixo de 6.0, eu sou reprovado. É basicamente essa a lógica por trás do uso do "if", sendo que no código será dada uma condição que, caso seja verdadeira, executará os comandos dentro desse "if".</p>
+
+                    <div class="code">
+                       
+                        <pre>if (2 > 0): </pre> 
+                        <pre>   print("2 é maior que 0!")</pre>
+                    </div>
+
+                    <div class="code">
+
+                        <pre>if (2 < 0): </pre> 
+                        <pre>   print("2 é menor que 0!")</pre>
+                    </div>
+
+                    <h2 class="titletext"> Else </h2>
+
+                    <p> Nesse último exemplo, nada foi printado, tendo em vista que 2 não é menor que 0. Entretanto, se eu querer mostrar algo, mesmo que a condição que for dada para o "if" seja falsa, o que pode ser feito? É aí que entra o "else"! </p>
+
+                    <p> O "else" pode ser traduzido como "Se algo for falso, faça outra coisa". Para entender melhor, observe o funcionamento do código disponibilizado abaixo: </p>
+
+                    <div class="code">
+
+                        <pre>if (2 < 0): </pre> 
+                        <pre>   print("2 é menor que 0!")</pre>
+                        <pre>else:</pre>
+                        <pre>   print("2 não é menor que 0!")</pre>
+                    </div>
+
+                    <h2 class="titletext"> Elif </h2>
+
+                    <p> Analise o código a seguir: </p>
+
+                    <div class="code">
+
+                        <pre>n = int(input()) </pre> 
+                        <pre>if(n > 0):</pre>
+                        <pre>   print("n é um número positivo.")</pre>
+                        <pre>else:</pre>
+                        <pre>   print("n é um número negativo.")</pre>
+                    </div>
+
+
+                    <p> A primeira vista parece tudo certo, pois se um número for maior que 0, ele será positivo, e o que não é positivo, é negativo. Todavia, e se a entrada for 0? 0 não é positivo nem negativo.  
+ </p>
+
+                    <p> Para solucionar a questão acima, pode-se utilizar o elif, que é usando quando a condição para o IF não é verdadeira e se quer dar uma nova condição. </p>
+
+                    <div class="code">
+
+                        <pre>n = int(input()) </pre> 
+                        <pre>if(n > 0):</pre>
+                        <pre>   print("n é um número positivo.")</pre>
+                        <pre>elif(n = 0):</pre>
+                        <pre>   print("n é um número neutro (0)."</pre>
+                        <pre>else:</pre>
+                        <pre>   print("n é um número negativo.")</pre>
+                    </div>
+ 
+
+                <br>
+
+                </div>
+
+                <div class="linha">
+                    <p> </p>
+                </div>
+
+               <style>
+                 .linha{
+                     height: 1480px;
+                 }
+               </style>
+
+               <%- include('codigopy.ejs') %>
