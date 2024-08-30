@@ -28,10 +28,9 @@ body {
 }
 
 .perfil img{
-    position: absolute;
     width: 7rem;
-    top: 0rem;
-    transform: translateY(100px) translateX(-50%);
+    display: block;
+    margin-bottom: 1rem;
 }
 
 .menu {
@@ -39,8 +38,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 15rem;
-    height: 28rem;
+    width: 16rem;
+    height: 29rem;
     border-radius: 10px;
     cursor: pointer;
     background-color: #D9C470;
@@ -48,7 +47,7 @@ body {
     row-gap: 1rem;
 }
 
-button {
+.btn {
     width: 12rem;
     height: 2.5rem;
     background: transparent;
@@ -78,6 +77,10 @@ button:hover {
     font-weight: 400;
     color: #333A53;
     text-transform: capitalize;
+}
+
+.button-github button {
+    margin-bottom: 5rem;
 }
 
 
