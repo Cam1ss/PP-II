@@ -147,15 +147,26 @@ button:hover {
 .card-back {
     background-color:  #D9C470;
     color: white;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     transform: rotateY(180deg);
     
 }
 
 .card-back p {
     color: #2D2D2D;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    font-size: 18px; 
+    font-weight: 600;
+    text-align: center;
 }
+
+.card-back p::first-letter {
+    text-transform: uppercase;
+  }
+
+span {
+    text-transform: capitalize;
+  }
 
 
 .card:hover .card-front {
