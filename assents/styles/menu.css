@@ -29,7 +29,7 @@ body {
 
 
 .perfil img{
-    width: 7rem;
+    width: 8rem;
     display: block;
     margin-bottom: 1rem;
 }
@@ -45,19 +45,19 @@ body {
     cursor: pointer;
     background-color: #D9C470;
     padding: 20px 18px;
-    row-gap: 1rem;
+    row-gap: 1.5rem;
 }
 
 .btn {
     width: 12rem;
-    height: 2.5rem;
+    height: 3rem;
     background: transparent;
     border: none;
     border-radius: 20px;
     background: #333A53;
     color: #D9C470;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 26px;
     letter-spacing: 1px;
     font-weight: 600;
     cursor: pointer;
@@ -74,14 +74,14 @@ button:hover {
 
 .menu h2 {
     margin-right: 3rem;
-    font-size: 32px;
+    font-size: 35px;
     font-weight: 400;
     color: #333A53;
     text-transform: capitalize;
 }
 
 .button-github button {
-    margin-bottom: 5rem;
+    margin-bottom: 7.50rem;
 }
 
 
