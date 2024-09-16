@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-body {
+body { 
     background-color: #1C2236;
 }
 
@@ -31,7 +31,7 @@ body {
 .perfil img{
     width: 8rem;
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .menu {
@@ -45,7 +45,9 @@ body {
     cursor: pointer;
     background-color: #D9C470;
     padding: 20px 18px;
-    row-gap: 1.5rem;
+    row-gap: 1.2rem;
+    margin-right: 30px;
+    margin-top: -0.5rem;
 }
 
 .btn {
@@ -72,27 +74,29 @@ button:hover {
     background: #2D2D2D;
 }
 
-.aboutus h2 {
+.menu h2 {
     margin-right: 3rem;
     font-size: 35px;
     font-weight: 400;
     color: #333A53;
-    margin-bottom: 22px;
     text-transform: capitalize;
-}   
+    margin-bottom: -0.1rem;
+} 
 
 .button-github button {
-    margin-bottom: 7.50rem;
+    margin-bottom: 7.3rem;
 }
 
 
 /* Conteudo */
 .painel {
-    margin-top: 20rem;
+    margin-top: -1rem;
     background-color: #333A53;
     width: 50rem;
     border-radius: 15px;
     padding: 1rem;
+    height: 29rem; /* Mesma altura do menu */
+    overflow-y: auto; 
 }
 
 .team-member {  
@@ -124,4 +128,24 @@ h3{
 h2{
     color: #eeeeee;
     margin-bottom: 2rem;
+}
+
+/* Estilizando a barra de rolagem do painel */
+.painel::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+.painel::-webkit-scrollbar-track {
+    background: #69718a; /* Cor do fundo da barra de rolagem */
+    border-radius: 10px; /* Borda arredondada para o fundo */
+}
+
+.painel::-webkit-scrollbar-thumb {
+    width: 1rem;
+    background-color: #D9C470; /* Cor da parte da barra que se move (thumb) */
+    border-radius: 10px; /* Borda arredondada para o thumb */
+}
+
+.painel::-webkit-scrollbar-thumb:hover {
+    background-color: #e4d763; /* Cor ao passar o mouse sobre o thumb */
 }
