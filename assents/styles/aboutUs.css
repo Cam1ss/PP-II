@@ -27,6 +27,7 @@ body {
     gap: 1rem;
 }
 
+
 .perfil img{
     width: 8rem;
     display: block;
@@ -71,23 +72,56 @@ button:hover {
     background: #2D2D2D;
 }
 
-.menu h2 {
+.aboutus h2 {
     margin-right: 3rem;
     font-size: 35px;
     font-weight: 400;
     color: #333A53;
+    margin-bottom: 22px;
     text-transform: capitalize;
-}
+}   
 
 .button-github button {
     margin-bottom: 7.50rem;
 }
 
 
-
 /* Conteudo */
 .painel {
+    margin-top: 20rem;
     background-color: #333A53;
-    width: 48rem;
+    width: 50rem;
     border-radius: 15px;
+    padding: 1rem;
+}
+
+.team-member {  
+    font-size: 90%;
+    background: 333A53;  
+    margin-bottom: 1rem ;  
+    padding: 1rem;  
+    border-radius: 5px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}
+
+.team-member img {  
+    border-radius: 50%;  
+    width: 80px;  
+    height: px;  
+ 
+    margin-right: 1rem;  
+} 
+
+p{
+   color: #ffffff;
+}
+
+h3{
+    color: #D9C470;
+}
+
+
+h2{
+    color: #eeeeee;
+    margin-bottom: 2rem;
 }
