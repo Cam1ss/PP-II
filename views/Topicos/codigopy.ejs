@@ -1,0 +1,53 @@
+<div class="console">
+    <h2> Digite seu Código Python </h2>
+    <textarea
+        id="code"
+        rows="20"
+        cols="35"
+        placeholder="Digite seu código Python aqui..."
+        spellcheck="false"
+    ></textarea>
+    <br></br>
+    
+    <h2> Entradas para Código </h2>
+    <textarea
+        id="input"
+        rows="5"
+        cols="35"
+        placeholder="Digite a entrada aqui..."
+        spellcheck="false"
+    > </textarea>
+    <br>
+    
+    <button onclick="runCode()">Executar</button>
+    <h2> Saída </h2>
+    <div class="codes">
+        <pre id="output"></pre>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+               <script>
+               async function runCode() {
+               const code = document.getElementById("code").value;
+               const input = document.getElementById("input").value;
+               const response = await fetch("/run", {
+                 method: "POST",
+                 headers: {
+                     "Content-Type": "application/json",
+                 },
+                 body: JSON.stringify({ code, input }),
+               });
+
+               const result = await response.text();
+               document.getElementById("output").textContent = result;
+               }
+               </script>
+
+               </body>
+
+               </html>
+                   
+                

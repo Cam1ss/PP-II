@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/stylesheets/perfil.css">
+    <title>Perfil</title>
+</head>
+<body>
+
+<%- include('./partials/ymenu') %>
+         <link rel="stylesheet" href="/stylesheets/perfil.css">
+    
+        <!-- BANNER-->
+        <div class="painel">
+            <div class="banner">
+                <img src="/images/banner.png" alt="Banner" class="banner-img">
+                <button class="btn-camera">
+                    <img src="/images/edit-icon.png" alt="Trocar Banner" class="camera-icon">
+                    <input type="file" id="banner-upload" class="file-upload" style="display: none;" accept="image/*">
+                </button>
+            </div>
+        
+            <!-- ICONE DE PERFIL, NOMES E BIO -->
+            <div class="perfil-info">
+                <div class="perfil-img">
+                    <img src="/images/perfil.png" alt="Foto de Perfil" class="perfil-picture">
+                    <div class="edit-profile-overlay">
+                        <img src="/images/edit-icon.png" alt="Trocar Foto" class="edit-icon">
+                        <input type="file" id="perfil-upload" class="file-upload" style="display: none;" accept="image/*">
+                    </div>
+                </div>
+                <div class="perfil-detalhes">
+                    <h1>Usuário Teste</h1>
+                    <h2>@helloworld</h2>
+                    <p>Olá! Sou um aluno de Informática do IFCE e estou utilizando o Cobralingo. Vamos aprender juntos! (A bio tem um limite de até duas linhas, depois disso ele vai tirar)
+                    </p>
+                </div>
+                <button class="edit-info-btn">
+                    <img src="/images/editar.png" alt="Editar Perfil" class="edit-icon">
+                    Editar Perfil
+                </button>
+            </div>
+
+            <!-- ULTIMAS ATUALIZAÇÕES -->
+            <div class="projetos-atual">
+                <h2>Ultimas atualizações:</h2>
+                <div class="topicos-container">
+                    <div class="topico-card">
+                        <h3>Tópico 1: Introdução ao Python</h3>
+                        <p>Fundamentos básicos da linguagem.</p>
+                    </div>
+                    <div class="topico-card">
+                        <h3>Tópico 2: Introdução a Variáveis</h3>
+                        <p>Declaração e tipos de variáveis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REPLIT E GITHUB -->
+            <div class="redes-sociais">
+                <a href="https://www.google.com/" target="_blank" class="social-link">GitHub</a>
+                <a href="https://www.google.com/" target="_blank" class="social-link">Replit</a>
+            </div>
+        </div>
+        
+        <!-- APARENCIA DA JANELA EDITAR PERFIL -->
+        <div id="editProfileModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Editar Perfil</h2>
+                <label for="username">Nome de display</label>
+                <input type="text" id="username" placeholder="Insira o nome de usuário">
+
+                
+                <label for="handle">Nome de usuário</label>
+                <input type="text" id="username" placeholder="Insira o nome de usuário">
+                
+                <label for="bio">Bio</label>
+                <textarea id="bio" rows="4" placeholder="Insira sua bio"></textarea>
+                
+                <button class="save-btn">Salvar</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+
+
+
+/////////////// JANELA EDITAR PERFIL
+
+
+        // Pegando o modal e o botão de fechar
+        const modal = document.getElementById("editProfileModal");
+        const editButton = document.querySelector(".edit-info-btn");
+        const closeButton = document.querySelector(".close-btn");
+    
+        // Quando o usuário clicar em "Editar Perfil", o modal abre
+        editButton.addEventListener("click", function() {
+            modal.style.display = "flex";
+        });
+    
+        // Quando o usuário clicar no "X", o modal fecha
+        closeButton.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+    
+        window.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+
+
+
+
+
+/////////////// MUDAR IMAGENS DE PERFIL E BANNER
+
+
+
+
+
+        const perfilUpload = document.getElementById("perfil-upload");
+        const perfilImage = document.querySelector(".perfil-picture");
+        const editIcon = document.querySelector(".edit-profile-overlay .edit-icon");
+
+        editIcon.addEventListener("click", function() {
+            perfilUpload.click();
+        });
+
+        perfilUpload.addEventListener("change", function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    perfilImage.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        const bannerUpload = document.getElementById("banner-upload");
+        const bannerImage = document.querySelector(".banner-img");
+        const cameraButton = document.querySelector(".btn-camera");
+
+        cameraButton.addEventListener("click", function() {
+            bannerUpload.click();
+        });
+
+        bannerUpload.addEventListener("change", function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    bannerImage.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+
+    
+</body>
+</html>

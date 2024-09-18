@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@font-face {
+    font-family: myFont;
+    src: url(/assents/styles/stella.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1C2236;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "K2D", sans-serif;
+}
+
+/* Menu */
+.card-main {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.perfil img{
+    width: 8rem;
+    display: block;
+    position: relative;
+    margin-bottom: 1rem;
+    top: 4vh;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    height: 29rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #D9C470;
+    padding: 20px 18px;
+    row-gap: 1.5rem;
+}
+
+.btn {
+    width: 12rem;
+    height: 3rem;
+    background: transparent;
+    border: none;
+    border-radius: 20px;
+    background: #333A53;
+    color: #D9C470;
+    cursor: pointer;
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "K2D", sans-serif;
+}
+
+.button-menu button {
+    background: #2D2D2D;
+}
+
+button:hover {
+    background: #2D2D2D;
+}
+
+#nomeUser{
+    margin-left: 2.8vw;
+    width: 13vw;
+}
+
+.menu h2 {
+    margin-right: 3rem;
+    font-size: 35px;
+    font-weight: 400;
+    color: #333A53;
+    text-transform: capitalize;
+}
+
+.button-github button {
+    margin-bottom: 7.50rem;
+}
+
+
+/* Conteudo */
+.painel {
+    background-color: #333A53;
+    width: 48rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card-main */
+.card-main-painel {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 45rem;
+}
+
+.nav-fake{
+    align-self: flex-start; /* Alinha apenas a nav-fake à esquerda */
+}
+
+.tres-pontos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    padding: 5px 0;
+    background-color: #495DA6;
+    width: 8rem;
+    height: 2.2rem;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.nav-fake .tres-pontos span {
+    top: 0.5rem;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    border-radius: 25px;
+}
+
+.nav-fake .tres-pontos .red {
+    background-color: #F24A52;
+}
+.nav-fake .tres-pontos .yellow {
+    background-color: #F8E859;
+}
+.nav-fake .tres-pontos .green {
+    background-color: #A1EB87;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    background-color: #495DA6;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    width: 45rem;
+    height: 2.9rem;
+}
+
+.title p {
+  margin-left: 2rem;
+  width: 30rem;
+  height: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #2D2D2D;
+    width: 45rem;
+    height: 22rem;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.cobralingo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+    align-self: flex-start; 
+    width: 42rem;
+    height: 18rem;
+    padding: 15px;
+}
+
+aside {
+    width: 100%;
+    background-color: #27334d;
+    border-radius: 20px;
+}
+
+aside img {
+    width: 100%;
+    animation: flutuacao 2s ease-in-out infinite;
+}
+
+@keyframes flutuacao {
+    0%,100%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+article h1 {
+    margin-top: 2rem;
+   font-family: myFont;
+   font-size: 6rem;
+   color: #e4d763;
+   font-weight: 300;
+}
+
+.intro p {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    max-width: 22rem;
+}
+
+.button-start{
+    background-color: aliceblue;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 90px;
+    cursor: pointer;
+    margin-left: 23rem;
+}

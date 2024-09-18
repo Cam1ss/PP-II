@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1C2236;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "K2D", sans-serif;
+}
+
+/* Menu */
+.card-main {
+    display: flex;
+    gap: 1rem;
+}
+
+.perfil img{
+    width: 7rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    height: 29rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #D9C470;
+    padding: 20px 18px;
+    row-gap: 1rem;
+}
+
+.btn {
+    width: 12rem;
+    height: 2.5rem;
+    background: transparent;
+    border: none;
+    border-radius: 20px;
+    background: #333A53;
+    color: #D9C470;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "K2D", sans-serif;
+}
+
+.button-conteudo button {
+    background: #2D2D2D;
+}
+
+button:hover {
+    background: #2D2D2D;
+}
+
+.menu h2 {
+    margin-right: 3rem;
+    font-size: 32px;
+    font-weight: 400;
+    color: #333A53;
+    text-transform: capitalize;
+}
+
+.button-github button {
+    margin-bottom: 5rem;
+}
+
+
+/* Conteudo */
+.painel {
+    background-color: #333A53;
+    width: 48rem;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* cards */
+
+.card {
+    width: 10rem;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:nth-child(4), .card:nth-child(5) {
+    width: calc((27.5rem - 60px) / 2); /* Calcula a largura das duas últimas cards para caberem duas por linha */
+}
+
+.card-front,
+.card-back {
+    width: 11rem;
+    height: 12rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0b11426e;
+    transition: transform 0.6s;
+}
+
+.card-front {
+    background-color: #D9C470;
+    padding: 10px;
+}
+
+.card-front img {
+    width: 9.5rem;
+    margin-bottom: 3px;
+}
+
+.card-front p {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #333A53;
+    margin-left: 2rem;
+}
+
+.card-back {
+    background-color:  #D9C470;
+    color: white;
+    padding: 0 1.5rem;
+    transform: rotateY(180deg);
+
+}
+
+.card-back p {
+    color: #2D2D2D;
+    margin-bottom: 2rem;
+}
+
+
+.card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+.start {
+    display: flex;
+    align-items: center;
+    width: 4.5rem;
+    height: 1.70rem;
+    font-size: 15px;
+    background-color: #333A53;
+    color: #D9C470;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.start:hover {
+    background-color: #2980b9;
+    color: #ffffff;
+}
+
+.btn-start {
+    text-decoration: none;
+
+}

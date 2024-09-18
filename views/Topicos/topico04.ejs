@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tópico 04</title>
+    <link rel="stylesheet" href="/stylesheets/topicos.css">
+</head>
+
+<body>
+
+    <script src="index.js"> </script>
+
+    <div class="containerM">
+        <div class="container2">
+           <div class="titulo">
+              <img src="/images/cobra.png" alt="cobrinha">
+              <h1> Tópico 04 - Estruturas de Repetição </h1>
+           </div>     
+           <br>
+           <div class="container">
+                <div class="paragrafos">
+                    <p> As estruturas de repetição são recursos das linguagens de programação responsáveis por executar um bloco de código repetidamente através de determinadas condições específicas.</p>
+                    <p> O Python contém dois tipos de estruturas de repetição: for e while. </p>
+
+                    <h2 class="titletext"> Loop For </h2>
+
+                    <p> O loop "for" é utilizado quando você sabe antecipadamente quantas vezes deseja executar um bloco de código, utilizado para percorrer ou iterar sobre uma sequência de dados (seja esse uma lista, uma tupla, uma string), executando um conjunto de instruções em cada item.</p>
+
+                    <div class="code">
+                        <pre class="comentario"># Iterando sobre uma lista </pre>
+                        <pre>frutas = ['maçã', 'banana', 'pêra'] </pre> 
+                        <pre>for fruta in frutas:</pre>
+                        <pre>    print(fruta)</pre>
+                    </div>
+
+                    <div class="code">
+                        <pre class="comentario"># Iterando sobre uma string</pre>
+                        <pre>for letra in 'Python': </pre> 
+                        <pre>    print(letra)</pre>
+                    </div>
+
+                    <p> Como podemos ver, ele imprimiu cada um dos itens da lista ‘frutas’ e cada uma das letras que formam a string ‘Python’. </p> 
+
+                    <p> Existe outra forma de se utilizar o for, que é utilizando a estrutura for/else, em que adiciona-se o else ao final do for nos possibilita executar um bloco de código após o iterável ter sido completamente percorrido.</p>
+
+                    <div class="code">
+                        <pre>sequencia = [1, 2, 3, 4, 5] </pre>
+                        <pre>for number in sequencia: </pre> 
+                        <pre>    print(number)</pre>
+                        <pre>else:   </pre>
+                        <pre>    print('Todos os números foram exibidos com sucesso')</pre>
+                    </div>
+
+                    <h2 class="titletext"> Loop While </h2>
+                    
+                    <p> O while é uma estrutura de repetição utilizada quando queremos que determinado bloco de código seja executado ENQUANTO (do inglês while) determinada condição for satisfeita. Em outras palavras: só saia da estrutura de repetição quando a condição não for mais satisfeita. </p>
+
+                    <div class="code">
+                        <pre>contador = 0 </pre>
+                        <pre>while contador < 5: </pre> 
+                        <pre>    print(contador)</pre>
+                        <pre>    contador += 1</pre>
+                        <pre class="comentario">"+= 1" significa que a variavel será somada a 1 unidade. É a mesma coisa que "contador = contador + 1"</pre>
+                    </div>
+
+                    
+                    <p> Note que temos uma variável ‘contador’, que tem como valor inicial 0, e que dentro desta estrutura de repetição temos uma linha de código que adiciona 1 ao valor de ‘contador’ toda vez que ela é executada, continuando até que a condição não seja mais satisfatória, que nesse caso é ‘contador’ ser menor que 5. Assim, ele percorrerá a estrutura de repetição 5 vezes, realizando também o resto do código definido nela (nesse caso, printar o valor de contador.
+ </p>
+
+                    <p> É importante ter cuidado ao usar o loop "while", pois se a condição nunca se tornar falsa, o loop continuará executando infinitamente, o que pode causar travamentos no programa. </p>
+
+                    <p> Assim como no for, podemos utilizar o else também nos loops while.</p>
+
+                    <div class="code">
+                        <pre>contador = 0 </pre>
+                        <pre>while contador < 5: </pre> 
+                        <pre>    contador += 1</pre>
+                        <pre>    print(f'Valor do contador é {contador}')</pre>
+                        <pre>else:</pre>
+                        <pre>    print(f'Fim do while e o valor do contador é {contador}')</pre>
+                    </div>
+
+
+                <p> Além disso, é possível utilizar as palavras-chave "break" e "continue" para controlar o fluxo de execução dentro de um loop. O "break" interrompe imediatamente a execução do loop, enquanto o "continue" pula para a próxima iteração. </p>    
+
+                <div class="code">
+                        <pre>contador = 0 </pre>
+                        <pre>while True: </pre> 
+                        <pre>    print(contador)</pre>
+                        <pre>    contador += 1</pre>
+                        <pre>    if contador >= 5:</pre>
+                        <pre>       break</pre>
+                </div>
+
+                <br>
+                    
+                </div>
+
+                <div class="linha">
+                    <p> </p>
+                </div>
+
+               <style>
+                 .linha{
+                     height: 1820px;
+                 }
+               </style>
+
+               <%- include('codigopy.ejs') %>
+
